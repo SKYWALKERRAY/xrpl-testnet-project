@@ -3,37 +3,41 @@
 # Getting Started: 
 1. Open Terminal/CLI and run:
 
-`git clone "https://github.com/SKYWALKERRAY/xrpl-testnet-project.git"`
+- `git clone "https://github.com/SKYWALKERRAY/xrpl-testnet-project.git"`
 
-Install [node.js/npm](https://radixweb.com/blog/installing-npm-and-nodejs-on-windows-and-mac)
+- If you get an error that: "Support for password authentication was removed," then try:
 
-Make sure node.js is installed by running the following (it should output the version you are running):
+- `git clone git@github.com:SKYWALKERRAY/xrpl-testnet-project.git`
 
-`node -v`
+2. Install [node.js/npm](https://radixweb.com/blog/installing-npm-and-nodejs-on-windows-and-mac)
 
-Go into the project directory using:
+- Make sure node.js is installed by running the following (it should output the version you are running):
 
-`cd xrpl-testnet-project/`
+- `node -v`
 
-Install the required dependencies by running:
+3. Go into the project directory using:
 
-`npm install`
+- `cd xrpl-testnet-project/`
 
-Once the dependencies are finished downloading, you can start the program by running:
+4. Install the required dependencies by running:
 
-`npm start`
+- `npm install`
 
-You should see that the withdrawl service is running at http://localhost:3000. 
+5. Once the dependencies are finished downloading, you can start the program by running:
 
-You can test that the program is running by using:
+- `npm start`
 
-`curl -X POST http://localhost:3000/withdraw`
+- You should see that the withdrawl service is running at http://localhost:3000. 
 
-It should give an error saying invalid user or insufficient balance. 
+6. You can test that the program is running by using:
 
-Running the following command should provide useful outputs to help you understand how the program is working in the background:
+- `curl -X POST http://localhost:3000/withdraw`
 
-`curl -X POST http://localhost:3000/withdraw \
+- It should give an error saying invalid user or insufficient balance. 
+
+- Running the following command should provide useful outputs to help you understand how the program is working in the background:
+
+- `curl -X POST http://localhost:3000/withdraw \
 -H "Content-Type: application/json" \
 -d '{"user": "user1", "amount": 300}'
 curl -X POST http://localhost:3000/withdraw \
