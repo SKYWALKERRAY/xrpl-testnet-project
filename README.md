@@ -1,37 +1,37 @@
 # xrpl-testnet-project
 
 # Getting Started: 
-1. Open Terminal/CLI and run:
+**1. Open Terminal/CLI and run:**
 
-- `git clone "https://github.com/SKYWALKERRAY/xrpl-testnet-project.git"`
+`git clone "https://github.com/SKYWALKERRAY/xrpl-testnet-project.git"`
 
-- If you get an error that: "Support for password authentication was removed," then try:
+If you get an error that: "Support for password authentication was removed," then try:
 
-- `git clone git@github.com:SKYWALKERRAY/xrpl-testnet-project.git`
+`git clone git@github.com:SKYWALKERRAY/xrpl-testnet-project.git`
 
-2. Install [node.js/npm](https://radixweb.com/blog/installing-npm-and-nodejs-on-windows-and-mac)
+**2. Install [node.js/npm](https://radixweb.com/blog/installing-npm-and-nodejs-on-windows-and-mac)**
 
-- Make sure node.js is installed by running the following (it should output the version you are running):
+Make sure node.js is installed by running the following (it should output the version you are running):
 
-- `node -v`
+`node -v`
 
-3. Go into the project directory using:
+**3. Go into the project directory using:**
 
-- `cd xrpl-testnet-project/`
+`cd xrpl-testnet-project/`
 
-4. Install the required dependencies by running:
+**4. Install the required dependencies by running:**
 
-- `npm install`
+`npm install`
 
-5. Once the dependencies are finished downloading, you can start the program by running:
+**5. Once the dependencies are finished downloading, you can start the program by running:**
 
-- `npm start`
+`npm start`
 
-- You should see that the withdrawl service is running at http://localhost:3000. 
+You should see that the withdrawl service is running at http://localhost:3000. 
 
-6. You can test that the program is running by using:
+**6. You can test that the program is running by using:**
 
-- `curl -X POST http://localhost:3000/withdraw`
+`curl -X POST http://localhost:3000/withdraw`
 
 - It should give an error saying invalid user or insufficient balance. 
 
