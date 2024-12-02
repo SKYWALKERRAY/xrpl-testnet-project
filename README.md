@@ -35,6 +35,10 @@ You should see that the withdrawl service is running at http://localhost:3000.
 
 - It should give an error saying invalid user or insufficient balance. 
 
+**7. Run the following to test the proportional withdrawl logid:**
+
+`node test-proportional.js`
+
 - Running the following command should provide useful outputs to help you understand how the program is working in the background:
 
 - `curl -X POST http://localhost:3000/withdraw \
