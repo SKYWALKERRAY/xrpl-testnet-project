@@ -3,7 +3,7 @@ const {
   processQueueWithdrawals,
   users,
   withdrawalQueue
-} = require('./controllers/withdrawal');
+} = require('./withdraw');
 
 console.log('Starting Edge Case Simulations');
 
